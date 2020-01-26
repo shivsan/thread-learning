@@ -2,6 +2,7 @@ package com.shivku.udemy.sync;
 
 import java.util.Scanner;
 
+// Lesson 2
 public class PreventCompilerOptimizationInThreads extends Thread {
     private volatile boolean running = true;
 
