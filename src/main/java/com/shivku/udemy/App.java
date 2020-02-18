@@ -1,6 +1,7 @@
 package com.shivku.udemy;
 
 import com.shivku.udemy.sync.PreventCompilerOptimizationInThreads;
+import com.shivku.udemy.sync.ProducerConsumer;
 import com.shivku.udemy.threads.ThreadCaller;
 
 class Runner extends Thread {
@@ -32,8 +33,10 @@ public class App {
 //        runner1.start();
 //        ThreadCaller threadCaller = new ThreadCaller();
 //        threadCaller.runSomethingWithRunnable();
-        var volatileTest = new PreventCompilerOptimizationInThreads();
-        volatileTest.runThread();
+//        var volatileTest = new PreventCompilerOptimizationInThreads();
+//        volatileTest.runThread();
+        var pc = new ProducerConsumer();
+        pc.running();
 
     }
 }
